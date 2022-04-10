@@ -1,32 +1,33 @@
+
+
+import Header from 'components/Header'
+import LoginScreen from 'components/LoginScreen'
+import Messages from 'components/Messages'
+import Spinner from 'components/Spinner'
 import Head from 'next/head'
-import LoginScreen from '../components/LoginScreen'
 import { useMoralis } from 'react-moralis'
-import Spinner from '../components/Spinner'
 
 const Home = () => {
-  const { isAuthenticated, logout, isInitializing } = useMoralis();
+  const { isAuthenticated, logout, isInitializing } = useMoralis()
 
   if (!isAuthenticated) return <LoginScreen />
   if (isInitializing) return <Spinner />
 
   return (
-    <>
-      {isAuthenticated && (
-        <div className="h-screen">
-          <Head>
-            <title>Metaverse Chatter</title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-          <div className='flex flex-col items-center justify-center space-y-10 h-screen'>
-            <h1 className='text-5xl'>Welcome to the METAVERSE CHATTER APP</h1>
-            <button onClick={logout} className='bg-black p-5 rounded-xl text-white'>LOGOUT NOW!</button>
+    <div
+      className="h-screen overflow-hidden overflow-y-scroll 
+      bg-gradient-to-b from-black to-fuchsia-900"
+    >
+      <Head>
+        <title>Metaverse Chatter</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-          </div>
-        </div>
-      )}
-    </>
-
-
+      <div className="mx-auto max-w-screen-xl">
+        <Header />
+        <Messages />
+      </div>
+    </div>
   )
 }
 

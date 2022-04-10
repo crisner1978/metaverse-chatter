@@ -5,13 +5,12 @@ export default function LoginScreen() {
   const { authenticate } = useMoralis()
   return (
     <div className="relative bg-black">
-      <h1>I'm the Login Screen</h1>
       <div
         className="absolute z-50 flex h-4/6 w-full flex-col items-center 
         justify-center space-y-4"
       >
         <div
-          className="flex rounded-full bg-gradient-to-b from-gray-900 
+          className="flex rounded-full bg-gradient-to-tr from-gray-900 
         via-yellow-300 to-blue-700 p-3 shadow-fuchsia-500 ring-2 ring-gray-900"
         >
           <Image
@@ -20,10 +19,19 @@ export default function LoginScreen() {
             height={220}
             width={200}
           />
+          <div className='absolute rounded-full object-cover'>
+            <Image
+              className="rounded-full object-cover"
+              src="https://res.cloudinary.com/dtram9qiy/image/upload/v1640819429/malamutes/heros/cellgradianttop.png"
+              height={220}
+              width={200}
+            />
+          </div>
+
         </div>
 
         <button
-          onClick={authenticate}
+          onClick={() => authenticate({ signingMessage: "Welcome to the Metaverse Chatter!" })}
           className="transform animate-pulse rounded-lg bg-gradient-to-tr 
         from-yellow-500 via-yellow-300 to-yellow-800 p-5 font-bold transition-all
         ease-out hover:animate-none active:scale-95"
@@ -40,7 +48,6 @@ export default function LoginScreen() {
           priority
           as='image'
         />
-        {/* Login Form */}
       </div>
     </div>
   )

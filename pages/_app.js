@@ -1,11 +1,11 @@
-import '../styles/globals.css'
-import { MoralisProvider } from "react-moralis";
+import AppProvider from '../AppProvider.js';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <MoralisProvider serverUrl={process.env.NEXT_PUBLIC_SERVER_URL} appId={process.env.NEXT_PUBLIC_APP_ID}>
+    <AppProvider>
       <Component {...pageProps} />
-    </MoralisProvider>
+    </AppProvider>
   )
 }
 
