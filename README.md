@@ -1,23 +1,47 @@
-# Next.js + Tailwind CSS Example
+## Demo
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+https://metaverse-chatter.vercel.app/
 
-## Deploy your own
+## About Stack:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Real Time Messaging App
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+# Next.js + Tailwind CSS + Moralis
+
+This app uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs). Moralis official documentation [Moralis docs](https://moralis.io/).
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+### 1. Get the source code
+You need to clone the latest version of the code from `main` branch and navigate to the project folder.
+```
+$ git clone -b main https://github.com/crisner1978/metaverse-chatter.git
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### 2. Install dependencies
+You need to install the dependencies specified in `package.json`:
+```
+$ npm install
+```
+or
+```
+$ yarn install
+```
+
+### 3. Set Environment Variables
+You need to set some environment variable to run the project correctly as those values are used internally by the application. You'll need to head over to Moralis and setup a free account [Moralis docs](https://moralis.io/)
+Copy file `.example-env` to `.env.local` and fill it in with your environment variables after creating an account with Moralis.
+> ℹ️ **Example values**<br>
+> NEXT_PUBLIC_SERVER_URL=your moralis server url<br>
+> NEXT_PUBLIC_APP_ID=your moralis app id
+
+### 4. Run the app
+To start the app:
+```
+$ npm run dev
+```
+or
+```
+$ yarn run dev
+```
+It will start the development server with HRM on top of it. The server is started at port `3000` and the URL is https://localhost:3000
