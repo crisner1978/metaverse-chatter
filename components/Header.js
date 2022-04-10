@@ -28,21 +28,18 @@ const Header = () => {
             <Tooltip message="Logout">
               <Avatar logoutOnPress />
             </Tooltip>
-            
           </div>
           <div className='flex flex-col'>
             <h1 className="text-2xl">
-            Welcome to the Meta
-            <span className="italic font-mono tracking-widest text-pink-200">
-              CHATTER
-            </span>
-            verse{' '}
-          </h1>
-          <h2 className="truncate text-3xl font-bold">{user.getUsername()}</h2>
+              Welcome to the Meta
+              <span className="italic font-mono tracking-widest text-pink-200">
+                CHATTER
+              </span>
+              verse{' '}
+            </h1>
+            <h2 className="truncate text-3xl font-bold">{user.getUsername()}</h2>
           </div>
-          
           <ChangeUsername />
-          {/* Change username component */}
         </div>
       </div>
     </div>
