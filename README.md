@@ -8,7 +8,7 @@ Real Time Messaging App
 
 # Next.js + Tailwind CSS + Moralis
 
-This app uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs). The app is powered by Moralis [Moralis IO](https://moralis.io/).
+This app uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs). The app is powered by [Moralis IO](https://moralis.io/).
 
 ## How to use
 
