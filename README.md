@@ -8,7 +8,7 @@ Real Time Messaging App
 
 # Next.js + Tailwind CSS + Moralis
 
-This app uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs). Moralis official documentation [Moralis docs](https://moralis.io/).
+This app uses [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs). The app is powered by Moralis [Moralis IO](https://moralis.io/).
 
 ## How to use
 
@@ -29,7 +29,7 @@ $ yarn install
 ```
 
 ### 3. Set Environment Variables
-You need to set some environment variables to run the project correctly as those values are used internally by the application. You'll need to head over to Moralis and setup a free account [Moralis docs](https://moralis.io/)
+You need to set some environment variables to run the project correctly as those values are used internally by the application. You'll need to head over to Moralis and setup a free account [Moralis IO](https://moralis.io/)
 Copy file `.example-env` to `.env.local` and fill it in with your environment variables after creating an account with Moralis.
 > ℹ️ **Example values**<br>
 > NEXT_PUBLIC_SERVER_URL=your moralis server url<br>
