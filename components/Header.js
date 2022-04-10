@@ -24,20 +24,23 @@ const Header = () => {
         </div>
 
         <div className="col-span-4 text-left lg:text-center">
-          <div className="relative h-48 w-48 rounded-full border-8 border-pink-500 lg:mx-auto">
+          <div className="relative h-40 w-40 rounded-full border-8 border-pink-500 lg:mx-auto">
             <Tooltip message="Logout">
               <Avatar logoutOnPress />
             </Tooltip>
             
           </div>
-          <h1 className="text-3xl">
+          <div className='flex flex-col'>
+            <h1 className="text-2xl">
             Welcome to the Meta
-            <span className="italic tracking-widest text-pink-200">
+            <span className="italic font-mono tracking-widest text-pink-200">
               CHATTER
             </span>
             verse{' '}
           </h1>
-          <h2 className="truncate text-5xl font-bold">{user.getUsername()}</h2>
+          <h2 className="truncate text-3xl font-bold">{user.getUsername()}</h2>
+          </div>
+          
           <ChangeUsername />
           {/* Change username component */}
         </div>
