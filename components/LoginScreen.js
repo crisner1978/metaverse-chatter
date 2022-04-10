@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { useMoralis } from 'react-moralis'
+import Logo from './Logo'
 
 export default function LoginScreen() {
   const { authenticate } = useMoralis()
@@ -9,32 +10,15 @@ export default function LoginScreen() {
         className="absolute z-50 flex h-4/6 w-full flex-col items-center 
         justify-center space-y-4"
       >
-        <div
-          className="flex rounded-full bg-gradient-to-tr from-gray-900 
-        via-yellow-300 to-blue-700 p-3 shadow-fuchsia-500 ring-2 ring-gray-900"
-        >
-          <Image
-            className="rounded-full object-cover"
-            src="https://res.cloudinary.com/dtram9qiy/image/upload/v1649547598/my-upload/lmxai4oqorfkwlnvsiqo.png"
-            height={220}
-            width={200}
-          />
-          <div className='absolute rounded-full object-cover'>
-            <Image
-              className="rounded-full object-cover"
-              src="https://res.cloudinary.com/dtram9qiy/image/upload/v1640819429/malamutes/heros/cellgradianttop.png"
-              height={220}
-              width={200}
-            />
-          </div>
-
-        </div>
-
+        <Logo
+          heightWidth
+          tw="logo_login"
+          img_1="https://res.cloudinary.com/dtram9qiy/image/upload/v1649547598/my-upload/lmxai4oqorfkwlnvsiqo.png"
+          gradient="https://res.cloudinary.com/dtram9qiy/image/upload/v1649603488/k2xdhcbhjpvju9qssukz_qcbuid.png"
+        />
         <button
           onClick={() => authenticate({ signingMessage: "Welcome to the Metaverse Chatter!" })}
-          className="transform animate-pulse rounded-lg bg-gradient-to-tr 
-        from-yellow-500 via-yellow-300 to-yellow-800 p-5 font-bold transition-all
-        ease-out hover:animate-none active:scale-95"
+          className="signin_btn"
         >
           Login to the METAVERSE
         </button>

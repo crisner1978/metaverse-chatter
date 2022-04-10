@@ -8,7 +8,7 @@ import Head from 'next/head'
 import { useMoralis } from 'react-moralis'
 
 const Home = () => {
-  const { isAuthenticated, logout, isInitializing } = useMoralis()
+  const { isAuthenticated, isInitializing } = useMoralis()
 
   if (!isAuthenticated) return <LoginScreen />
   if (isInitializing) return <Spinner />

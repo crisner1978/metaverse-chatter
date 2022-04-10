@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+    .signin_btn {
+      @apply transform animate-pulse rounded-lg bg-gradient-to-tr 
+      from-yellow-500 via-yellow-300 to-yellow-800 p-5 font-bold transition-all
+      ease-out hover:animate-none active:scale-95
+    }
+    .logo_login {
+      @apply flex rounded-full bg-gradient-to-tr from-gray-900
+      via-yellow-300 to-blue-700 p-3 shadow-fuchsia-500 ring-2 ring-gray-900
+    }
+    .logo_header {
+      @apply relative mx-auto hidden h-24 w-24 rounded-full border-4 border-yellow-500 lg:inline-grid
+    }
+  }

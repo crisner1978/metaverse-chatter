@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Tooltip({ message, children }) {
   return (
     <div className="group flex flex-col items-center">

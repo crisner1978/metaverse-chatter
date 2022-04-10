@@ -1,7 +1,7 @@
 import { useMoralis } from "react-moralis";
 
 export default function ChangeUsername() {
-  const { setUserData, isUserUpdating, userError, user } = useMoralis();
+  const { setUserData, isUserUpdating, user } = useMoralis();
   
   const setUsername = () => {
     const username = prompt(`Enter your new Username (current: ${user.getUsername()})`)
