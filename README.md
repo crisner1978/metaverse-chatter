@@ -29,7 +29,7 @@ $ yarn install
 ```
 
 ### 3. Set Environment Variables
-You need to set some environment variables to run the project correctly as those values are used internally by the application. You'll need to head over to Moralis and setup a free account [Moralis IO](https://moralis.io/)
+You need to set some environment variables to run the project correctly as those values are used internally by the application. You'll need to head over to [Moralis IO](https://moralis.io/) and setup a free account
 Copy file `.example-env` to `.env.local` and fill it in with your environment variables after creating an account with Moralis.
 > ℹ️ **Example values**<br>
 > NEXT_PUBLIC_SERVER_URL=your moralis server url<br>
